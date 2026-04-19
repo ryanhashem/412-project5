@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fightin' Texas Aggies — This Is Our Year</title>
+    <meta
+      name="description"
+      content="A hype page celebrating the Fightin' Texas Aggies. Includes a copyable prompt textbox and a responsive image gallery."
+    />
+    <style>
+      :root {
+        --maroon: #500000; /* Aggie-inspired maroon */
+        --maroon-2: #6a0010;
+        --cream: #f7f3f0;
+        --ink: #101114;
+        --card: #ffffff;
+        --muted: #6b7280;
+        --ring: rgba(80, 0, 0, 0.2);
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        --radius: 20px;
+      }
+
+      /* Reset-ish */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica,
+          Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        color: var(--ink);
+        background: linear-gradient(180deg, #fff, #faf9f7 45%, #f8f7f5 100%);
+        line-height: 1.5;
+      }
+      a {
+        color: var(--maroon);
+        text-decoration: none;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      .container {
+        width: min(1100px, 92vw);
+        margin-inline: auto;
+      }
+
+      /* Top Bar */
+      header.topbar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        backdrop-filter: saturate(1.3) blur(8px);
+        background: rgba(255, 255, 255, 0.75);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      }
+      .topbar .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 0;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.4px;
+      }
+      .brand .badge {
+        width: 38px;
+        height: 38px;
+        border-radius: 12px;
+        background: radial-gradient(
+          120% 120% at 25% 20%,
+          #8a001a 0%,
+          var(--maroon) 38%,
+          #2b0000 100%
+        );
+        display: grid;
+        place-items: center;
+        color: #fff;
+        font-weight: 900;
+        box-shadow: var(--shadow);
+      }
+      .navlinks {
+        display: flex;
+        gap: 0.9rem;
+      }
+      .navlinks a {
+        padding: 8px 12px;
+        border-radius: 10px;
+        font-weight: 600;
+        color: var(--ink);
+      }
+      .navlinks a:hover {
+        background: #f2eeeb;
+      }
+
+      /* Hero */
+      .hero {
+        position: relative;
+        overflow: hidden;
+        background: radial-gradient(
+            1200px 500px at 70% -10%,
+            rgba(80, 0, 0, 0.18),
+            transparent 60%
+          ),
+          linear-gradient(180deg, #fff, #fff 55%, #f7f3f0);
+      }
+      .hero .container {
+        padding: clamp(40px, 6vw, 96px) 0;
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: clamp(20px, 3vw, 40px);
+        align-items: center;
+      }
+
+      .kicker {
+        font-weight: 800;
+        color: var(--maroon);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+      }
+      .hero h1 {
+        font-size: clamp(34px, 5.4vw, 56px);
+        line-height: 1.05;
+        margin: 8px 0 10px;
+      }
+      .hero p {
+        color: var(--muted);
+        font-size: clamp(16px, 1.6vw, 18px);
+        max-width: 60ch;
+      }
+
+      .cta-row {
+        display: flex;
+        gap: 12px;
+        margin-top: 18px;
+        flex-wrap: wrap;
+      }
+      .btn {
+        appearance: none;
+        border: 0;
+        cursor: pointer;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        padding: 12px 18px;
+        border-radius: 999px;
+        transition: transform 0.12s ease, box-shadow 0.2s ease,
+          background 0.2s ease, color 0.2s ease;
+      }
+      .btn-primary {
+        background: linear-gradient(180deg, var(--maroon), var(--maroon-2));
+        color: #fff;
+        box-shadow: 0 6px 18px var(--ring);
+      }
+      .btn-primary:hover {
+        transform: translateY(-1px);
+      }
+      .btn-ghost {
+        background: #efe9e6;
+        color: #3b3b3b;
+      }
+
+      .hero-visual {
+        position: relative;
+      }
+      .hero-card {
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        border: 1px solid rgba(0, 0, 0, 0.06);
+      }
+      .hero-card img {
+        aspect-ratio: 4/3;
+        object-fit: cover;
+      }
+      .hero-chip {
+        position: absolute;
+        right: -12px;
+        bottom: -12px;
+        transform: rotate(-3deg);
+        background: #fff;
+        border: 2px dashed var(--maroon);
+        color: var(--maroon);
+        padding: 10px 14px;
+        border-radius: 12px;
+        font-weight: 900;
+        box-shadow: var(--shadow);
+      }
+
+      /* Prompt Section */
+      section.prompt {
+        padding: 40px 0 10px;
+      }
+      .prompt .card {
+        background: var(--card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        padding: clamp(18px, 2.2vw, 28px);
+      }
+      .prompt h2 {
+        margin: 0 0 8px;
+        font-size: clamp(24px, 3vw, 32px);
+      }
+      .prompt p {
+        color: var(--muted);
+        margin: 0 0 14px;
+      }
+
+      .prompt-tools {
+        display: grid;
+        gap: 14px;
+      }
+      textarea#promptBox {
+        width: 100%;
+        min-height: 160px;
+        resize: vertical;
+        padding: 14px 16px;
+        border-radius: 14px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        font: 500 14px/1.55 ui-monospace, SFMono-Regular, Menlo, Monaco,
+          Consolas, "Liberation Mono", "Courier New", monospace;
+        background: #fff;
+        outline: none;
+        box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02);
+      }
+      textarea#promptBox:focus {
+        border-color: var(--maroon);
+        box-shadow: 0 0 0 4px var(--ring);
+      }
+
+      .prompt-actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      /* Hype Section */
+      section.hype {
+        padding: 32px 0;
+      }
+      .hype .panel {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 28px;
+        align-items: center;
+        background: linear-gradient(180deg, #fff, #fdfbfa);
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        border-radius: var(--radius);
+        padding: clamp(16px, 2.4vw, 28px);
+      }
+      .hype h3 {
+        margin: 0 0 8px;
+        font-size: clamp(22px, 2.6vw, 30px);
+      }
+      .hype p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      /* Gallery */
+      section.gallery {
+        padding: 30px 0 56px;
+      }
+      .gallery h2 {
+        margin: 0 0 14px;
+        font-size: clamp(24px, 3vw, 32px);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 14px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+      }
+      .card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+      }
+      .card .media {
+        position: relative;
+      }
+      .card .media img {
+        aspect-ratio: 16/10;
+        object-fit: cover;
+      }
+      .card .body {
+        padding: 14px 16px;
+      }
+      .card .eyebrow {
+        font-size: 0.8rem;
+        font-weight: 800;
+        color: var(--maroon);
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+      }
+      .card h4 {
+        margin: 6px 0 6px;
+        font-size: 1.05rem;
+      }
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .span-6 {
+        grid-column: span 6;
+      }
+      .span-4 {
+        grid-column: span 4;
+      }
+      .span-8 {
+        grid-column: span 8;
+      }
+
+      /* Footer */
+      footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 20px 0 36px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      /* Responsive */
+      @media (max-width: 960px) {
+        .hero .container,
+        .hype .panel {
+          grid-template-columns: 1fr;
+        }
+        .hero-visual {
+          order: -1;
+        }
+        .grid {
+          grid-template-columns: repeat(6, 1fr);
+        }
+        .span-8 {
+          grid-column: span 6;
+        }
+        .span-6 {
+          grid-column: span 6;
+        }
+        .span-4 {
+          grid-column: span 6;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container wrap">
+        <div class="brand">
+          <div class="badge" aria-hidden="true">FT</div>
+          <span>Fightin' Texas — Fan Page</span>
+        </div>
+        <nav class="navlinks" aria-label="primary">
+          <a href="index.html" class="btn btn-ghost" title="Back to Home"
+            >&larr; Back</a
+          >
+          <a href="#prompt">Prompt</a>
+          <a href="#hype">Why It's Our Year</a>
+          <a href="#gallery">Photos</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-copy">
+          <div class="kicker">Gig 'Em! 12th Man Energy</div>
+          <h1>This is the Fightin' Texas Aggies year in football.</h1>
+          <p>
+            The spirit is loud, the stands are packed, and the 12th Man is
+            ready. From sunrise drills to Saturday night lights, this squad is
+            built different—disciplined, hungry, and ready to make a statement
+            all season long.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#prompt">Copy the prompt ↓</a>
+            <a class="btn btn-ghost" href="#gallery">See the hype photos</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <figure class="hero-card">
+            <!-- You can replace this image src with your own hosted image. -->
+            <img
+              src="https://source.unsplash.com/1200x900/?american-football,stadium"
+              alt="Under the lights in an American football stadium"
+            />
+          </figure>
+          <div class="hero-chip" aria-hidden="true">This is the year ✨</div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- PROMPT BOX -->
+      <section id="prompt" class="prompt container">
+        <div class="card">
+          <h2>Copy this exact prompt</h2>
+          <p>
+            Use the button to copy, or edit it first. Paste anywhere you like.
+          </p>
+          <div class="prompt-tools">
+            <label for="promptBox" class="sr-only">Prompt</label>
+            <textarea id="promptBox" spellcheck="false">
+Use html and css to build a website page that will be featured on my website. Make sure there is a textbox where I can copy this prompt into (or you can just copy it yourself) make sure to include some cool images and talk about how this is the Fightin&#39; Texas Aggies year in football.</textarea
+            >
+            <div class="prompt-actions">
+              <button
+                class="btn btn-primary"
+                id="copyBtn"
+                aria-label="Copy prompt to clipboard"
+              >
+                Copy Prompt
+              </button>
+              <button
+                class="btn btn-ghost"
+                id="selectBtn"
+                aria-label="Select prompt text"
+              >
+                Select Text
+              </button>
+              <small
+                id="copyState"
+                aria-live="polite"
+                style="align-self: center; color: var(--maroon)"
+              ></small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HYPE / COPY BLOCK -->
+      <section id="hype" class="hype container">
+        <div class="panel">
+          <div>
+            <h3>Why it feels like destiny</h3>
+            <p>
+              Momentum is real when the culture is right. The Aggies faithful
+              know it: toughness in the trenches, explosive playmakers in space,
+              and a defense that swarms. With the 12th Man behind them, this
+              team has the grit and belief to turn close games into signature
+              wins. No matter the opponent—no one wants to walk into Kyle Field
+              this year. Gig 'Em!
+            </p>
+          </div>
+          <figure class="hero-card" aria-label="Hype image">
+            <!-- Replace with your own hosted image to avoid randomness. -->
+            <img
+              src="https://source.unsplash.com/1000x750/?american-football,team"
+              alt="A huddle pumping up before kickoff"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" class="gallery container">
+        <h2>Highlights & Hype</h2>
+        <div class="grid">
+          <article class="card span-8">
+            <div class="media">
+              <img
+                src="https://source.unsplash.com/1600x1000/?american-football,lights"
+                alt="Friday night lights atmosphere"
+              />
+            </div>
+            <div class="body">
+              <div class="eyebrow">Kyle Field Vibes</div>
+              <h4>The roar of the 12th Man</h4>
+              <p>
+                That electricity you can feel in your bones—home-field advantage
+                at its loudest.
+              </p>
+            </div>
+          </article>
+
+          <article class="card span-4">
+            <div class="media">
+              <img
+                src="https://source.unsplash.com/900x700/?american-football,helmet"
+                alt="Helmet close-up ready for battle"
+              />
+            </div>
+            <div class="body">
+              <div class="eyebrow">Ready</div>
+              <h4>Built for four quarters</h4>
+              <p>
+                Conditioned, disciplined, relentless. Finish strong—every snap,
+                every game.
+              </p>
+            </div>
+          </article>
+
+          <article class="card span-6">
+            <div class="media">
+              <img
+                src="https://source.unsplash.com/1200x900/?american-football,practice"
+                alt="Practice reps at dawn"
+              />
+            </div>
+            <div class="body">
+              <div class="eyebrow">Work</div>
+              <h4>Sunrise reps</h4>
+              <p>
+                Championship seasons are built long before the first whistle.
+                Trust the grind.
+              </p>
+            </div>
+          </article>
+
+          <article class="card span-6">
+            <div class="media">
+              <img
+                src="https://source.unsplash.com/1200x900/?american-football,fan"
+                alt="Fans celebrating a big play"
+              />
+            </div>
+            <div class="body">
+              <div class="eyebrow">Family</div>
+              <h4>12th Man family</h4>
+              <p>
+                When the Aggies score, the whole place shakes. That’s culture.
+                That’s belief.
+              </p>
+            </div>
+          </article>
+        </div>
+        <p style="margin-top: 10px; color: var(--muted); font-size: 0.92rem">
+          Note: Photos load from Unsplash at random based on keywords. Swap
+          <code>src</code> URLs with your own hosted images for consistency.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div>
+          Made with ❤️ for the Fightin' Texas Aggies. Not affiliated with or
+          endorsed by Texas A&amp;M University.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const ta = document.getElementById("promptBox");
+      const copyBtn = document.getElementById("copyBtn");
+      const selectBtn = document.getElementById("selectBtn");
+      const copyState = document.getElementById("copyState");
+
+      copyBtn.addEventListener("click", async () => {
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(ta.value);
+          } else {
+            // Fallback for older browsers
+            ta.select();
+            document.execCommand("copy");
+          }
+          copyState.textContent = "Copied!";
+          setTimeout(() => (copyState.textContent = ""), 1600);
+        } catch (e) {
+          copyState.textContent = "Copy failed — select manually";
+          setTimeout(() => (copyState.textContent = ""), 2400);
+        }
+      });
+
+      selectBtn.addEventListener("click", () => {
+        ta.focus();
+        ta.select();
+      });
+    </script>
+  </body>
+</html>

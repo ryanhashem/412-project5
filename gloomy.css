@@ -1,0 +1,507 @@
+/* LANDING PAGE */
+.landingPage {
+  background-color: #f7d9bc;
+}
+
+body.landingPage {
+  margin: 0;
+  padding: 0;
+}
+
+.landingPage .header {
+  text-align: center;
+}
+
+.landingPage .header h1 {
+  font-size: 50px;
+  font-family: fantasy;
+  font-weight: bold;
+  color: #b34600;
+  padding-top: 20px;
+}
+
+.landingPage .header button {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  margin: 0;
+  border: none;
+  background-color: #4b0001;
+  color: #f7d9bc;
+  font-size: 16pt;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.landingPage .nav {
+  text-align: center;
+  margin: 20px 0;
+  padding-top: 20px;
+}
+
+.landingPage .nav .navLink {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 15px 30px;
+  background-color: #b34600;
+  color: #f7d9bc;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  border-radius: 50px;
+}
+
+.landingPage .aboutMe {
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy;
+  font-weight: bold;
+  color: #b34600;
+  padding-top: 50px;
+}
+
+.landingPage .aboutMeSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff7f0;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.landingPage .aboutMeSection .tamuLogo {
+  width: 200px;
+  margin: 20px;
+}
+
+.landingPage .aboutMeSection .headshot {
+  width: 200px;
+  border-radius: 5%;
+  margin: 20px;
+}
+
+.landingPage .aboutMeSection .aboutMeText {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  text-align: left;
+  font-family: Helvetica, Arial, sans-serif;
+  max-width: 500px;
+}
+
+.landingPage .majorCommitments {
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy;
+  font-weight: bold;
+  color: #b34600;
+  padding-top: 50px;
+}
+
+.landingPage .majorCommitmentsSection {
+  max-width: 775px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff7f0;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.landingPage .majorCommitmentsSection .endeavrLogo {
+  width: 400px;
+  margin: 20px;
+}
+
+.landingPage .majorCommitmentsSection .deltFlag {
+  width: 300px;
+  border-radius: 5%;
+  margin: 20px;
+}
+
+.landingPage .majorCommitmentsSection .majorCommitmentsText {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  text-align: left;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/*PORTFOLIO PAGE*/
+.portfolioPage {
+  background-color: #f7d9bc;
+  text-align: center;
+}
+
+body.portfolioPage {
+  margin: 0;
+  padding: 0;
+}
+
+.portfolioPage .header {
+  text-align: center;
+}
+
+.portfolioPage .header h1 {
+  font-size: 50px;
+  font-family: fantasy;
+  font-weight: bold;
+  color: #b34600;
+  padding-top: 20px;
+}
+
+.portfolioPage .header button {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  margin: 0;
+  border: none;
+  background-color: #4b0001;
+  color: #f7d9bc;
+  font-size: 16pt;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.portfolioPage .nav {
+  text-align: center;
+  margin: 20px 0;
+  padding-top: 20px;
+}
+
+.portfolioPage .nav .navLink {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 15px 30px;
+  background-color: #b34600;
+  color: #f7d9bc;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  border-radius: 50px;
+}
+
+.portfolioPage .ultrasonic {
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy;
+  font-weight: bold;
+  color: #b34600;
+  padding-top: 50px;
+}
+
+.portfolioPage .ultrasonicSection {
+  max-width: 775px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff7f0;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.portfolioPage .ultrasonicSection .ultrasonicText1 {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  text-align: left;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.portfolioPage .ultrasonicSection .ultrasonicText2 {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  text-align: left;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.portfolioPage .skillsSection .technicalSkills {
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy;
+  font-weight: bold;
+  color: #b34600;
+}
+
+.portfolioPage .skillsSection {
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 40px 30px;
+  padding: 20px;
+  background-color: #fff7f0;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.portfolioPage .skillsList {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  text-align: left;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.portfolioPage .interestsSection .interest {
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy;
+  font-weight: bold;
+  color: #b34600;
+}
+
+.portfolioPage .interestsSection {
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 40px 30px;
+  padding: 20px;
+  background-color: #fff7f0;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.portfolioPage .interestList {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  text-align: left;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/*QUALIFICATIONS PAGE*/
+.qualificationsPage {
+  background-color: #f7d9bc;
+}
+
+body.qualificationsPage {
+  margin: 0;
+  padding: 0;
+}
+
+.qualificationsPage .header {
+  text-align: center;
+}
+
+.qualificationsPage .header h1 {
+  font-size: 50px;
+  font-family: fantasy;
+  font-weight: bold;
+  color: #b34600;
+  padding-top: 20px;
+}
+
+.qualificationsPage .header button {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  margin: 0;
+  border: none;
+  background-color: #4b0001;
+  color: #f7d9bc;
+  font-size: 16pt;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.qualificationsPage .nav {
+  text-align: center;
+  margin: 20px 0;
+  padding-top: 20px;
+}
+
+.qualificationsPage .nav .navLink {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 15px 30px;
+  background-color: #b34600;
+  color: #f7d9bc;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  border-radius: 50px;
+}
+
+.qualificationsPage .tamuBanner {
+  border-radius: 50px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+  width: 500px;
+  height: auto;
+}
+
+.qualificationsPage .resume {
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy;
+  font-weight: bold;
+  color: #b34600;
+  padding-top: 30px;
+}
+
+.qualificationsPage .currentlyDoing {
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy;
+  font-weight: bold;
+  color: #b34600;
+  padding-top: 30px;
+}
+
+.qualificationsPage .currentlyDoingText {
+  max-width: 775px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff7f0;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  text-align: left;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/*SERVICE PAGE*/
+.servicePage {
+  background-color: #f7d9bc;
+}
+
+body.servicePage {
+  margin: 0;
+  padding: 0;
+}
+
+.servicePage .header {
+  text-align: center;
+}
+
+.servicePage .header h1 {
+  font-size: 50px;
+  font-family: fantasy;
+  font-weight: bold;
+  color: #b34600;
+  padding-top: 20px;
+}
+
+.servicePage .header button {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  margin: 0;
+  border: none;
+  background-color: #4b0001;
+  color: #f7d9bc;
+  font-size: 16pt;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.servicePage .nav {
+  text-align: center;
+  margin: 20px 0;
+  padding-top: 20px;
+}
+
+.servicePage .nav .navLink {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 15px 30px;
+  background-color: #b34600;
+  color: #f7d9bc;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  border-radius: 50px;
+}
+
+.servicePage .volunteer {
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy;
+  font-weight: bold;
+  color: #b34600;
+  padding-top: 30px;
+}
+
+.servicePage .volunteerText1 {
+  max-width: 600px;
+  margin: 40px;
+  padding: 30px;
+  background-color: #fff7f0;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  text-align: left;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.servicePage .volunteerText2 {
+  max-width: 600px;
+  margin: 40px 40px 40px auto;
+  padding: 30px;
+  background-color: #fff7f0;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  text-align: left;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.servicePage .endeavrGroup {
+  border-radius: 20px;
+}
+
+.qualificationsPage .profLinks {
+  text-align: center;
+  margin: 20px 0;
+  padding-top: 20px;
+}
+
+.qualificationsPage .profLinks .githubLink {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 15px 30px;
+  background-color: #b34600;
+  color: #f7d9bc;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  border-radius: 50px;
+}
+
+.qualificationsPage .profLinks .linkedinLink {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 15px 30px;
+  background-color: #b34600;
+  color: #f7d9bc;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  border-radius: 50px;
+}

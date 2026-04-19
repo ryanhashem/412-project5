@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link id="mainStyle" rel="stylesheet" href="generic.css" />
+  </head>
+  <body class="qualificationsPage">
+    <div class="header">
+      <h1>Qualifications</h1>
+      <button onclick="changeStyle()" type="button" id="toggleStyle">
+        Change Style
+      </button>
+    </div>
+
+    <div class="nav">
+      <a href="index.html" class="navLink">Home</a>
+      <a href="portfolio.html" class="navLink">Portfolio</a>
+      <a href="service.html" class="navLink">Service</a>
+      <a href="genai.html" class="navLink">Gen-AI</a>
+    </div>
+
+    <div class="bannerAndLinks">
+      <img src="tamu_banner.jpeg" alt="TAMU banner" class="tamuBanner" />
+      <div class="profLinks">
+        <a
+          href="https://github.com/ryanhashem"
+          target="_blank"
+          class="githubLink"
+          >GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/ryanhashem/"
+          target="_blank"
+          class="linkedinLink"
+          >LinkedIn</a
+        >
+      </div>
+    </div>
+
+    <h2 class="resume">Resume</h2>
+
+    <center>
+      <iframe
+        class="pdf"
+        src="https://drive.google.com/file/d/1M4nQyRYYGekIym6T3XOv0DzhrAaY2wMW/preview"
+        width="700"
+        height="500"
+      >
+      </iframe>
+    </center>
+
+    <h2 class="currentlyDoing">What I am Currently Doing</h2>
+
+    <p class="currentlyDoingText">
+      Over the 2025 Summer I was serving as a Software Engineering intern for
+      ENDEAVR Institute where we are developing our own autonomous driving
+      agent. I was fortunate enough to be offered an extension as an intern over
+      the Fall 2025 semester!
+
+      <br /><br />
+
+      While I cannot get into specifics (I signed an NDA) I am able to go over
+      some of the technologies I have had the pleasure of working with. I have
+      been able to gain much familiarity with
+      <a href="https://www.python.org/" target="_blank"> Python</a>, since much
+      of machine learning is done via
+      <a href="https://pytorch.org/" target="_blank"> PyTorch</a> and data
+      management. <br /><br />
+      I have also been able to work with
+      <a href="https://aws.amazon.com/s3/" target="_blank"> S3</a>, a popular
+      AWS service, as well as
+      <a href="https://parquet.apache.org/" target="_blank"> Apache Parquet</a>
+      and PyArrow. The most valuable gain from this internship has been studying
+      and employing generative adversarial imitaion learning (<a
+        href="https://arxiv.org/abs/1606.03476"
+        target="_blank"
+        >GAIL</a
+      >), which is a modern method for training artificial intelligence.
+    </p>
+    <script src="theme.js"></script>
+  </body>
+</html>

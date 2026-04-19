@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link id="mainStyle" rel="stylesheet" href="generic.css" />
+  </head>
+
+  <body class="portfolioPage">
+    <div class="header">
+      <h1>Portfolio</h1>
+      <button onclick="changeStyle()" type="button" id="toggleStyle">
+        Change Style
+      </button>
+    </div>
+
+    <div class="nav">
+      <a href="index.html" class="navLink">Home</a>
+      <a href="qualifications.html" class="navLink">Qualifications</a>
+      <a href="service.html" class="navLink">Service</a>
+      <a href="genai.html" class="navLink">Gen-AI</a>
+    </div>
+
+    <h2 class="ultrasonic">Ultrasonic Distance Measurer</h2>
+
+    <div class="ultrasonicSection">
+      <p class="ultrasonicText1">
+        One of my most comprehensive personal projects that I have worked on was
+        my ultrasonic distance measurer. Armed with an HC-SR04 ultrasonic
+        sensor, an
+        <a href="https://www.arduino.cc/" target="_blank"> Arduino</a> Board, a
+        16x2 LCD display, a breadboard, and some jumper wires, I was able to
+        engineer a device that tells the distance between itself and an object
+        in front of it through ultrasonic pulses.
+      </p>
+
+      <center>
+        <video width="640" height="360" controls>
+          <source src="measurer_demo.mp4" type="video/mp4" />
+          Your browser does not support this video.
+        </video>
+      </center>
+
+      <p class="ultrasonicText2">
+        Throughout this project, I was able to gain hands on experience with
+        both computer science and computer engineering. I learned how to use
+        circuit boards in conjuction with jumper wires, breadboards, sensors,
+        and displays.
+
+        <br /><br />
+
+        Not only did I gain experience with the hardware components, but I wrote
+        the software to control these components. Figuring out how the hardware
+        and software interacted seemed like a nearly impossible task at the
+        time, but luckily I was able to do plenty of research and figure it out.
+
+        <br /><br />
+        Following development, I was able to test and refine the functionality
+        so that the distance measure could be accurate up to 30 feet. This was a
+        very rewarding project because I had a tangible device that I could
+        actually use if necessary.
+      </p>
+    </div>
+
+    <div class="skillsSection">
+      <h2 class="technicalSkills">Technical Skills</h2>
+
+      <ul class="skillsList">
+        <li>C++</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>HTML/CSS</li>
+        <li>AI/ML</li>
+        <li>Version Control</li>
+        <li>Circuit Boards</li>
+        <li>PyTorch</li>
+      </ul>
+    </div>
+
+    <div class="interestsSection">
+      <h2 class="interest">Areas of Interest</h2>
+
+      <ul class="interestList">
+        <li>GAIL</li>
+        <li>Backend Development</li>
+        <li>Big Data</li>
+        <li>Autonomous Driving</li>
+        <li>Financial Market Algorithms</li>
+        <li>Embedded Systems</li>
+        <li>AI/ML Research</li>
+        <li>Large Language Models</li>
+      </ul>
+    </div>
+    <script src="theme.js"></script>
+  </body>
+</html>

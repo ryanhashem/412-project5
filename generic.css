@@ -1,0 +1,460 @@
+/* LANDING PAGE */
+.landingPage {
+  background-color: #faffff;
+}
+
+.landingPage .header {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.landingPage .header h1 {
+  font-size: 50px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #5d7fbe;
+}
+
+.landingPage .header button {
+  position: absolute;
+  right: 100px;
+  font-family: Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  background-color: #5d7fbe;
+  border: 1px solid #5d7fbe;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-size: 16pt;
+  color: white;
+}
+
+.landingPage .nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.landingPage .nav .navLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+  background-color: #5d7fbe;
+  border: 1px solid white;
+}
+
+.landingPage .aboutMe {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #5d7fbe;
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+.landingPage .aboutMeSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  gap: 125px;
+  margin: 0 auto;
+}
+
+.landingPage .aboutMeSection .headshot {
+  width: 200px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.landingPage .aboutMeSection .tamuLogo {
+  width: 200px;
+  height: auto;
+}
+
+.landingPage .aboutMeSection .aboutMeText {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+}
+
+.landingPage .majorCommitments {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #5d7fbe;
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+.landingPage .majorCommitmentsSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  gap: 125px;
+  margin: 0 auto;
+}
+
+.landingPage .majorCommitmentsSection .deltFlag {
+  width: 200px;
+  height: auto;
+}
+
+.landingPage .majorCommitmentsSection .endeavrLogo {
+  width: 200px;
+  height: auto;
+}
+
+.landingPage .majorCommitmentsSection .majorCommitmentsText {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+}
+
+/* PORTFOLIO PAGE */
+.portfolioPage {
+  background-color: #faffff;
+}
+
+.portfolioPage .header {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.portfolioPage .header h1 {
+  font-size: 50px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #5d7fbe;
+}
+
+.portfolioPage .header button {
+  position: absolute;
+  right: 100px;
+  font-family: Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  background-color: #5d7fbe;
+  border: 1px solid #5d7fbe;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-size: 16pt;
+  color: white;
+}
+
+.portfolioPage .nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.portfolioPage .nav .navLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+  background-color: #5d7fbe;
+  border: 1px solid white;
+}
+
+.portfolioPage .ultrasonic {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #5d7fbe;
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+.portfolioPage .ultrasonicText1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.portfolioPage .ultrasonicText2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  width: 850px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.portfolioPage .technicalSkills {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #5d7fbe;
+  font-size: 30px;
+  margin-top: 70px;
+}
+
+.portfolioPage .skillsList {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  margin-top: 20px;
+  margin: 20px auto;
+  width: 10%;
+}
+
+.portfolioPage .interest {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #5d7fbe;
+  font-size: 30px;
+  margin-top: 70px;
+}
+
+.portfolioPage .interestList {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  margin-top: 20px;
+  margin: 20px auto;
+  width: 10%;
+}
+
+/* QUALIFICATIONS PAGE */
+.qualificationsPage {
+  background-color: #faffff;
+}
+
+.qualificationsPage .header {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.qualificationsPage .header h1 {
+  font-size: 50px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #5d7fbe;
+}
+
+.qualificationsPage .header button {
+  position: absolute;
+  right: 100px;
+  font-family: Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  background-color: #5d7fbe;
+  border: 1px solid #5d7fbe;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-size: 16pt;
+  color: white;
+}
+
+.qualificationsPage .nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.qualificationsPage .nav .navLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+  background-color: #5d7fbe;
+  border: 1px solid white;
+}
+
+.qualificationsPage .tamuBanner {
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.qualificationsPage .resume {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #5d7fbe;
+  font-size: 30px;
+}
+
+.qualificationsPage .currentlyDoing {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #5d7fbe;
+  font-size: 30px;
+  margin-top: 70px;
+}
+
+.qualificationsPage .currentlyDoingText {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* SERVICE PAGE */
+.servicePage {
+  background-color: #faffff;
+}
+
+.servicePage .header {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.servicePage .header h1 {
+  font-size: 50px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #5d7fbe;
+}
+
+.servicePage .header button {
+  position: absolute;
+  right: 100px;
+  font-family: Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  background-color: #5d7fbe;
+  border: 1px solid #5d7fbe;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-size: 16pt;
+  color: white;
+}
+
+.servicePage .nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.servicePage .nav .navLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+  background-color: #5d7fbe;
+  border: 1px solid white;
+}
+
+.servicePage .volunteer {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #5d7fbe;
+  font-size: 30px;
+  margin-top: 75px;
+}
+
+.servicePage .volunteerText1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.servicePage .volunteerText2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.qualificationsPage .profLinks {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.qualificationsPage .profLinks .githubLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+  background-color: #5d7fbe;
+  border: 1px solid white;
+}
+
+.qualificationsPage .profLinks .linkedinLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+  background-color: #5d7fbe;
+  border: 1px solid white;
+}
